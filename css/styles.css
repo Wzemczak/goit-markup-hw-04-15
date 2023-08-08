@@ -311,6 +311,7 @@ nav {
   justify-content: space-around;
 }
 .customers-list > li {
+  fill: var(--lightslate);
   border: 1px solid var(--lightslate);
   border-radius: 4px;
 }
