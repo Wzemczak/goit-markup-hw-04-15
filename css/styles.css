@@ -109,8 +109,18 @@ nav {
   color: var(--ocean);
 }
 .slogan-background {
-  background: var(--navyblue);
   padding: 188px 0;
+  background-color: var(--navyblue);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .slogan {
   color: var(--white);
@@ -153,7 +163,7 @@ nav {
   background: var(--cloud);
   color: var(--iris);
   text-align: center;
-
+  border: 1px solid var(--cornflower);
   font-size: 16px;
 
   font-weight: 500;
@@ -164,12 +174,22 @@ nav {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background: var(--ocean);
-
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: var(--white);
+  border-bottom: none;
 }
 .company-desc {
   display: flex;
   gap: 24px;
+}
+.company-desc > li > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
 }
 .header-three {
   font-size: 20px;
@@ -279,4 +299,41 @@ nav {
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.portfolio li:hover,
+.portfolio li:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.customers-list {
+  display: flex;
+  justify-content: space-around;
+}
+.customers-list > li {
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
+}
+.team-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.social-header {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--white);
+}
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-container {
+  display: flex;
+}
+.social-container {
+  margin-left: 120px;
 }
